@@ -17,7 +17,6 @@ class AppContainer extends HTMLElement{
         </app-header>
         <app-galle>
         </app-galle>
-
         <app-galle1>
         </app-galle1>
         `
