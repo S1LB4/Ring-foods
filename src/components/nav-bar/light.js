@@ -16,7 +16,7 @@ class light extends HTMLElement {
 
     render(){
         this.shadowRoot.innerHTML =`
-        <link rel="stylesheet" href="../../../../css/estilos.css">
+        <link rel="stylesheet" href="../../../css/estilos.css">
         <section class="imagen-light">
             <img src="../img/x-regular-24.png" alt="" class="close">
             <img src="../img/fondo.jpg" alt="" class="agregar-imagen">

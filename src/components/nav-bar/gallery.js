@@ -16,7 +16,7 @@ class gallery extends HTMLElement {
 
     render(){
         this.shadowRoot.innerHTML =`
-        <link rel="stylesheet" href="../../../../css/estilos.css">
+        <link rel="stylesheet" href="../../../css/estilos.css">
     <section class="gallery" id="portafolio">
             <h2 class="subtitulo">RESTAURANTS NEAR YOU</h2>
             <div class="contenedor-galeria">

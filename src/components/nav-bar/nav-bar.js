@@ -16,7 +16,7 @@ class navBar extends HTMLElement {
 
     render(){
         this.shadowRoot.innerHTML =`
-        <link rel="stylesheet" href="../../../../css/estilos.css">
+        <link rel="stylesheet" href="../../../css/estilos.css">
         <nav class="nav container">
         <div class="nav_logo" class="navcolor">
             <li class="nav_items">

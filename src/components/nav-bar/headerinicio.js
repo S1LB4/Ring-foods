@@ -16,7 +16,7 @@ class headerinicio extends HTMLElement {
 
     render(){
         this.shadowRoot.innerHTML =`
-        <link rel="stylesheet" href="../../../../css/estilos.css">
+        <link rel="stylesheet" href="../../../css/estilos.css">
         <header class="header" id="inicio">
 
         <div class="contenedor head">
