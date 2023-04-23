@@ -1,4 +1,5 @@
-import * as components from "./components/index.js"
+import "./screens/navbar"
+
 class AppContainer extends HTMLElement{
     constructor (){
         super();
@@ -10,7 +11,10 @@ class AppContainer extends HTMLElement{
     }
 
     render(){
-        this.shadowRoot.innerHTML = `
+        const navbar = this.ownerDocument.createElement('app-navbar');
+        this.shadowRoot?.appendChild(navbar);
+
+       /* this.shadowRoot.innerHTML = `
         <app-navbar>
         </app-navbar>
         <app-header>
@@ -19,7 +23,7 @@ class AppContainer extends HTMLElement{
         </app-galle>
         <app-galle1>
         </app-galle1>
-        `
+        `*/
     }
 }
 customElements.define('app-container', AppContainer)

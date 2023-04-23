@@ -1,5 +1,0 @@
-export {default as navBar} from "../components/nav-bar/nav-bar.js"
-export {default as headerinicio} from "../components/nav-bar/headerinicio.js"
-export {default as gallery1} from "../components/nav-bar/gallery.js"
-export {default as gallery} from "../components/nav-bar/gallery.js"
-export {default as light} from "../components/nav-bar/light.js"
