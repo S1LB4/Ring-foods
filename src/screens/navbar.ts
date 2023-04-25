@@ -16,10 +16,11 @@ class NavBar extends HTMLElement {
     connectedCallback(){
         this.render();
     }
-    attributeChangeCallback(propName, oldValue, newValue){
-        this[propName] = newValue;
-        this.render();
-    }
+
+    // attributeChangeCallback(propName, oldValue, newValue){
+    //     this[propName] = newValue;
+    //     this.render();
+    // }
 
     render(){
         const mainContent = this.ownerDocument.createElement('nav');

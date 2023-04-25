@@ -1,4 +1,5 @@
 import "./screens/navbar"
+import "./RestaurantsNear/NearYou"
 
 class AppContainer extends HTMLElement{
     constructor (){
@@ -12,9 +13,10 @@ class AppContainer extends HTMLElement{
 
     render(){
         const navbar = this.ownerDocument.createElement('app-navbar');
-        const Restaurants = this.ownerDocument.createElement('app-restaurants');
         this.shadowRoot?.appendChild(navbar);
 
+        const restaurants = this.ownerDocument.createElement('app-restaurants');
+        this.shadowRoot?.appendChild(restaurants);
        /* this.shadowRoot.innerHTML = `
         <app-navbar>
         </app-navbar>
