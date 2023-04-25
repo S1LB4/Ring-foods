@@ -24,11 +24,10 @@ class NavBar extends HTMLElement {
     render(){
         const mainContent = this.ownerDocument.createElement('nav');
         mainContent.classList.add("nav-container");
-
-
         const div_logo = this.ownerDocument.createElement('div');
         div_logo.classList.add("nav-logo");
-
+        const div_logo_list = this.ownerDocument.createElement('ul');
+        div_logo_list.classList.add("nav_link");
         const div_logo_list_item = this.ownerDocument.createElement('li');
         div_logo_list_item.classList.add("nav_items");
         const div_logo_list_item_img = this.ownerDocument.createElement('img');
@@ -45,15 +44,8 @@ class NavBar extends HTMLElement {
         const starurl = this.ownerDocument.createElement('img');
         starurl.setAttribute('src', this.logoStartUrl);
         div_logo_list_item?.appendChild(starurl);
+//ESTA ES LA NAV BAR LO QUE APARECE ARRIBA DE LA PAGINA
 
-
-
-
-
-        this.shadowRoot?.appendChild(mainContent);
-        const css = this.ownerDocument.createElement('style');
-        css.innerHTML = styles;
-        this.shadowRoot?.appendChild(css);
         // this.shadowRoot.innerHTML =`
         // <link rel="stylesheet" href="../../../css/estilos.css">
         // <nav class="nav container">

@@ -12,6 +12,7 @@ class AppContainer extends HTMLElement{
 
     render(){
         const navbar = this.ownerDocument.createElement('app-navbar');
+        const Restaurants = this.ownerDocument.createElement('app-restaurants');
         this.shadowRoot?.appendChild(navbar);
 
        /* this.shadowRoot.innerHTML = `
