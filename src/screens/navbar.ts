@@ -46,6 +46,24 @@ class NavBar extends HTMLElement {
         div_logo_list_item?.appendChild(starurl);
 //ESTA ES LA NAV BAR LO QUE APARECE ARRIBA DE LA PAGINA
 
+
+
+        this.shadowRoot?.appendChild(mainContent);
+        const css = this.ownerDocument.createElement('style');
+        css.innerHTML = styles;
+        this.shadowRoot?.appendChild(css);
+
+      /*  <section class="gallery" id="portafolio">
+        <h2 class="subtitulo">RESTAURANTS NEAR YOU</h2>
+        <div class="contenedor-galeria">
+        <img src="../img/santos.png" alt="" class="img-galeria">
+        <img src="../img/corral.png" alt="" class="img-galeria">
+        <img src="../img/Cheers.png" alt="" class="img-galeria">
+        <img src="../img/MW.jpg" alt="" class="img-galeria">
+        <img src="../img/cuuc.jpg" alt="" class="img-galeria">
+        <img src="../img/martins.jpg" alt="" class="img-galeria">
+            </div>
+            </section>*/
         // this.shadowRoot.innerHTML =`
         // <link rel="stylesheet" href="../../../css/estilos.css">
         // <nav class="nav container">
