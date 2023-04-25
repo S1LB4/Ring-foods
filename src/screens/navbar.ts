@@ -28,9 +28,11 @@ class NavBar extends HTMLElement {
 
         const div_logo = this.ownerDocument.createElement('div');
         div_logo.classList.add("nav-logo");
-        const div_logo_list_item = this.ownerDocument.createElement('li');
 
+        const div_logo_list_item = this.ownerDocument.createElement('li');
+        div_logo_list_item.classList.add("nav_items");
         const div_logo_list_item_img = this.ownerDocument.createElement('img');
+        div_logo_list_item_img.classList.add("nav_title");
         div_logo_list_item_img.setAttribute('src', this.logoUrl);
         div_logo_list_item?.appendChild(div_logo_list_item_img);
         div_logo?.appendChild(div_logo_list_item);
