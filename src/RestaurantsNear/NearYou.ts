@@ -3,22 +3,46 @@ import styles from "../screens/styles.css";
 class Restaurants extends HTMLElement {
     logoUrl: string = "../../img/Cheers.png";
     RestCorral: string = "../../img/corral.png";
-    logoStartUrl: string = "../../img/cuuc.png";
-static get observedAttributes(){
-    return[]
-}
-constructor(){
-    super();
-    this.attachShadow({mode:'open'})
-}
-connectedCallback(){
-    this.render();
-}
-attributeChangeCallback(propName, oldValue, newValue){
-    this[propName] = newValue;
-    this.render();
-}
+    logoStartUrl: string = "../../img/cuuc.jpg";
 
+    //TODO: El arreglo restaurants va a estar en el STORE, no en la clase
+    restaurants = [
+        {
+            logo_url: "../../img/Cheers.png"
+        },
+        {
+            logo_url: "../../img/corral.png"
+        },
+        {
+            logo_url: "../../img/cuuc.jpg"
+        },
+        {
+            logo_url: "../../img/martins.jpg"
+        },
+        {
+            logo_url: "../../img/MW.jpg"
+        },
+        {
+            logo_url: "../../img/santos.png"
+        },
+    ]
+
+    constructor(){
+        super();
+        this.attachShadow({mode:'open'})
+    }
+
+    // static get observedAttributes(){
+    //     return[]
+    // }
+    connectedCallback(){
+        this.render();
+    }
+
+    // attributeChangeCallback(propName, oldValue, newValue){
+    //     this[propName] = newValue;
+    //     this.render();
+    // }
 
     render(){
     const section_logo = this.ownerDocument.createElement('section');
